@@ -30,6 +30,7 @@ public static class AddressableManager
 
     public static async UniTask SetSpriteAsync(this FixedImageRatio image, string address)
     {
+        if (!File.Exists(address)) return;
         Sprite sprite = await LoadImageFromPath(address);
         if (sprite != null)
             image.SetSprite(sprite);

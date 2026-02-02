@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using _SeqTool;
 using Newtonsoft.Json;
 using Sonat.Enums;
 using SonatFramework.Systems.LevelManagement;
@@ -21,6 +22,7 @@ namespace Gameplay.LevelData
         public List<OrderData> orderData;
         public bool isDropMode;
         public List<ObstacleData> obstacleData;
+        public List<SequenceOrderData> sequenceOrderData;
 
         public virtual LevelData Clone()
         {

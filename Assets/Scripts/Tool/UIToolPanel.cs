@@ -56,6 +56,7 @@ namespace Tool
 
         [SerializeField] private UITargetController uiTargetController;
 
+        public Toggle DropLevelToggle => dropLevelToggle;
         public LevelData_SkewerJam LevelData => levelData;
         public SonatLevelService LevelService => levelService;
 
