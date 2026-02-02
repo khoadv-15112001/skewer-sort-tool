@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d212e26ecc1f94da4dd4de67dc496b, type: 3}
+  m_Name: WinstreakConfig
+  m_EditorClassIdentifier: 
+  levelStart: 90
+  dayUnlock: 0
+  maxLives: 3
+  iconItem: {fileID: 21300000, guid: add87f604b3d9814db359bc6d4397d29, type: 3}
+  iconLives: {fileID: 21300000, guid: add87f604b3d9814db359bc6d4397d29, type: 3}
+  iconWidget: {fileID: 21300000, guid: 4d2a803e7c861f94cb916f682d962389, type: 3}
+  boardSprites:
+  - {fileID: 21300000, guid: 85f9e5e5ac747e64aabc4c20d3ca2203, type: 3}
+  - {fileID: 21300000, guid: 01d1e660f10992048a4adfd3af3e82a0, type: 3}
+  - {fileID: 21300000, guid: 399b913e82e408e4e810aed60755fd86, type: 3}
+  timeConfig:
+    eventStartDay:
+      day: 5
+      hour: 8
+    eventEndDay:
+      day: 4
+      hour: 8
+  chestSprites:
+  - chestType: 0
+    sprite: {fileID: 21300000, guid: ec9f6e56da622cd4ea922fe50d94815c, type: 3}
+  - chestType: 1
+    sprite: {fileID: 21300000, guid: 5dd06e2b30dcd6248bd0c2e3b22db47f, type: 3}
+  - chestType: 2
+    sprite: {fileID: 21300000, guid: 009cab0356023144aa11d2e3e291132b, type: 3}
+  - chestType: 3
+    sprite: {fileID: 21300000, guid: c2327b75613e4d54fa978d206761f134, type: 3}
+  rewardDatas:
+  - levelWinRequired: 2
+    reward:
+      resourceDatas:
+      - resource: 54
+        quantity: 1
+    railReward:
+      resourceDatas: []
+  - levelWinRequired: 5
+    reward:
+      resourceDatas:
+      - resource: 4
+        quantity: 1
+    railReward:
+      resourceDatas:
+      - resource: 157
+        quantity: 20
+  - levelWinRequired: 8
+    reward:
+      resourceDatas:
+      - resource: 2
+        quantity: 1800
+    railReward:
+      resourceDatas: []
+  - levelWinRequired: 11
+    reward:
+      resourceDatas:
+      - resource: 5
+        quantity: 1
+    railReward:
+      resourceDatas: []
+  - levelWinRequired: 15
+    reward:
+      resourceDatas:
+      - resource: 53
+        quantity: 1
+      - resource: 54
+        quantity: 1
+      - resource: 55
+        quantity: 1
+    railReward:
+      resourceDatas:
+      - resource: 53
+        quantity: 1
+      - resource: 157
+        quantity: 30
+      - resource: 55
+        quantity: 1
+  - levelWinRequired: 19
+    reward:
+      resourceDatas:
+      - resource: 3
+        quantity: 1
+      - resource: 8
+        quantity: 1
+      - resource: 102
+        quantity: 1
+    railReward:
+      resourceDatas: []
+  - levelWinRequired: 23
+    reward:
+      resourceDatas:
+      - resource: 1
+        quantity: 100
+      - resource: 103
+        quantity: 1
+    railReward:
+      resourceDatas: []
+  - levelWinRequired: 28
+    reward:
+      resourceDatas:
+      - resource: 2
+        quantity: 1800
+      - resource: 6
+        quantity: 1
+      - resource: 53
+        quantity: 1
+      - resource: 55
+        quantity: 1
+      - resource: 104
+        quantity: 1
+    railReward:
+      resourceDatas:
+      - resource: 2
+        quantity: 1800
+      - resource: 157
+        quantity: 40
+      - resource: 53
+        quantity: 1
+      - resource: 55
+        quantity: 1
+      - resource: 104
+        quantity: 1
+  - levelWinRequired: 33
+    reward:
+      resourceDatas:
+      - resource: 4
+        quantity: 1
+      - resource: 54
+        quantity: 1
+      - resource: 105
+        quantity: 1
+    railReward:
+      resourceDatas: []
+  - levelWinRequired: 40
+    reward:
+      resourceDatas:
+      - resource: 1
+        quantity: 300
+      - resource: 54
+        quantity: 1
+      - resource: 3
+        quantity: 1
+      - resource: 106
+        quantity: 1
+    railReward:
+      resourceDatas:
+      - resource: 1
+        quantity: 300
+      - resource: 157
+        quantity: 50
+      - resource: 3
+        quantity: 1
+      - resource: 106
+        quantity: 1
+  debugWeeklyWindow: 0

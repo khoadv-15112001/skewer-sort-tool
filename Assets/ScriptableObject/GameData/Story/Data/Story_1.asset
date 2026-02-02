@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2de1da860325cd4c9cee04a79f5554c, type: 3}
+  m_Name: Story_1
+  m_EditorClassIdentifier: 
+  data:
+    Id: 1
+    IsComingSoon: 0
+    Name: Fading Dream
+    LevelReached: 15
+    FileNameVideo: 1.mp4
+    RewardData:
+      resourceDatas:
+      - resource: 2
+        quantity: 1800
+      - resource: 54
+        quantity: 1
+      - resource: 53
+        quantity: 1
+      - resource: 55
+        quantity: 1
+      - resource: 1
+        quantity: 100
+    ImageConfig:
+      BackgroundHomeSprite: {fileID: 21300000, guid: 5665fa14b0b0ca14e872b26525029ba3, type: 3}
+      BackgroundIngameSprite: {fileID: 21300000, guid: 9f5c5848dfd3c9f4788d60661187d6e2, type: 3}
+      ThumbnailConfig:
+        ThumbnailGraySprite: {fileID: 21300000, guid: 65ede65468f1f31498f2eb1784195ce4, type: 3}
+        Position: {x: -6, y: -38}
+        Scale: 0.88
+      OffsetYBackgroundIngame: -85

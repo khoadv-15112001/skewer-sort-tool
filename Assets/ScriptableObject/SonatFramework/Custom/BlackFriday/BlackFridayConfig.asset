@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80cd9d7fd2e5ac2428543c9d516b5c72, type: 3}
+  m_Name: BlackFridayConfig
+  m_EditorClassIdentifier: 
+  startDate: 2025-11-20
+  endDate: 2025-12-01
+  spinPrices:
+  - userType: 0
+    firstSpinPrice: 0
+    spinPrice: 50
+  - userType: 1
+    firstSpinPrice: 0
+    spinPrice: 100
+  - userType: 2
+    firstSpinPrice: 0
+    spinPrice: 200
+  - userType: 3
+    firstSpinPrice: 0
+    spinPrice: 200
+  - userType: 4
+    firstSpinPrice: 0
+    spinPrice: 300
+  discountTables:
+  - userType: 0
+    discountProbabilities:
+    - discountPercent: 60
+      weightFirst: 2
+      weightSecond: 2
+      weightLater: 10
+    - discountPercent: 40
+      weightFirst: 40
+      weightSecond: 45
+      weightLater: 55
+    - discountPercent: 30
+      weightFirst: 33
+      weightSecond: 38
+      weightLater: 30
+    - discountPercent: 20
+      weightFirst: 25
+      weightSecond: 15
+      weightLater: 5
+  - userType: 1
+    discountProbabilities:
+    - discountPercent: 60
+      weightFirst: 2
+      weightSecond: 2
+      weightLater: 2
+    - discountPercent: 40
+      weightFirst: 35
+      weightSecond: 40
+      weightLater: 45
+    - discountPercent: 30
+      weightFirst: 35
+      weightSecond: 38
+      weightLater: 40
+    - discountPercent: 20
+      weightFirst: 28
+      weightSecond: 20
+      weightLater: 13
+  - userType: 2
+    discountProbabilities:
+    - discountPercent: 60
+      weightFirst: 2
+      weightSecond: 2
+      weightLater: 2
+    - discountPercent: 40
+      weightFirst: 20
+      weightSecond: 30
+      weightLater: 40
+    - discountPercent: 30
+      weightFirst: 38
+      weightSecond: 43
+      weightLater: 45
+    - discountPercent: 20
+      weightFirst: 40
+      weightSecond: 25
+      weightLater: 13
+  - userType: 3
+    discountProbabilities:
+    - discountPercent: 60
+      weightFirst: 2
+      weightSecond: 2
+      weightLater: 2
+    - discountPercent: 40
+      weightFirst: 20
+      weightSecond: 30
+      weightLater: 40
+    - discountPercent: 30
+      weightFirst: 38
+      weightSecond: 43
+      weightLater: 45
+    - discountPercent: 20
+      weightFirst: 40
+      weightSecond: 25
+      weightLater: 13
+  - userType: 4
+    discountProbabilities:
+    - discountPercent: 60
+      weightFirst: 1
+      weightSecond: 1
+      weightLater: 1
+    - discountPercent: 40
+      weightFirst: 20
+      weightSecond: 22
+      weightLater: 29
+    - discountPercent: 30
+      weightFirst: 35
+      weightSecond: 42
+      weightLater: 50
+    - discountPercent: 20
+      weightFirst: 44
+      weightSecond: 35
+      weightLater: 20
+  rewardsPerSpin:
+  - userType: 0
+    reward:
+      resource: 1
+      quantity: 2500
+  - userType: 1
+    reward:
+      resource: 1
+      quantity: 5000
+  - userType: 2
+    reward:
+      resource: 1
+      quantity: 8000
+  - userType: 3
+    reward:
+      resource: 1
+      quantity: 10000
+  - userType: 4
+    reward:
+      resource: 1
+      quantity: 25000

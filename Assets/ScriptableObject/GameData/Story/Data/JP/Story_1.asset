@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2de1da860325cd4c9cee04a79f5554c, type: 3}
+  m_Name: Story_1
+  m_EditorClassIdentifier: 
+  data:
+    Id: 1
+    IsComingSoon: 0
+    Name: Flavor from the Heart
+    LevelReached: 15
+    FileNameVideo: 1_jp.mp4
+    BackgroundHomeMusic: {fileID: 0}
+    RewardData:
+      resourceDatas:
+      - resource: 2
+        quantity: 1800
+      - resource: 54
+        quantity: 1
+      - resource: 53
+        quantity: 1
+      - resource: 55
+        quantity: 1
+      - resource: 1
+        quantity: 100
+    ImageConfig:
+      BackgroundHomeSprite: {fileID: 21300000, guid: aa5617e2cffdfaf4faa3e678bc0b090f, type: 3}
+      BackgroundIngameSprite: {fileID: 21300000, guid: 3532a0c54d7213245847a4479932f576, type: 3}
+      ThumbnailConfig:
+        ThumbnailGraySprite: {fileID: 21300000, guid: a4cc09c6b13cd5b489370b0f590a002f, type: 3}
+        Position: {x: -6, y: -38}
+        Scale: 0.88
+      OffsetYBackgroundIngame: 50

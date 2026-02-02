@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85dbbce7c65cc794b94e2a992a931e83, type: 3}
+  m_Name: VideoBarConfig
+  m_EditorClassIdentifier: 
+  active: 1
+  levelStart: 0
+  retentionDay: 0
+  maxWatchPerDay: 5
+  showWidget: 1
+  datas:
+  - watchCount: 1
+    rewards:
+      resourceDatas:
+      - resource: 1
+        quantity: 20
+  - watchCount: 2
+    rewards:
+      resourceDatas:
+      - resource: 1
+        quantity: 30
+  - watchCount: 3
+    rewards:
+      resourceDatas:
+      - resource: 1
+        quantity: 40
+  - watchCount: 4
+    rewards:
+      resourceDatas:
+      - resource: 1
+        quantity: 50
+  - watchCount: 5
+    rewards:
+      resourceDatas:
+      - resource: 1
+        quantity: 50
+      - resource: 2
+        quantity: 1200

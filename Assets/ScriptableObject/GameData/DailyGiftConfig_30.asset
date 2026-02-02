@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9602e08a0985f1041955844d917a1f29, type: 3}
+  m_Name: DailyGiftConfig_30
+  m_EditorClassIdentifier: 
+  maxLoginStreakGapDays: 7
+  dailyGifts:
+  - day: 7
+    reward:
+      resourceDatas:
+      - resource: 54
+        quantity: 1
+      - resource: 102
+        quantity: 1
+    isSpecial: 1
+    sprite: {fileID: 21300000, guid: 62ce322b0807d5641aee26b27d9cc1c1, type: 3}
+  - day: 15
+    reward:
+      resourceDatas:
+      - resource: 2
+        quantity: 900
+      - resource: 3
+        quantity: 1
+      - resource: 54
+        quantity: 1
+      - resource: 53
+        quantity: 1
+      - resource: 103
+        quantity: 1
+    isSpecial: 1
+    sprite: {fileID: 21300000, guid: a5f83e13e4be398479f1351eff1a0f83, type: 3}
+  - day: 25
+    reward:
+      resourceDatas:
+      - resource: 2
+        quantity: 1800
+      - resource: 5
+        quantity: 1
+      - resource: 53
+        quantity: 1
+      - resource: 55
+        quantity: 1
+      - resource: 104
+        quantity: 1
+    isSpecial: 1
+    sprite: {fileID: 21300000, guid: 320ce22720a85a648b66d388f848a411, type: 3}
+  - day: 30
+    reward:
+      resourceDatas:
+      - resource: 2
+        quantity: 3600
+      - resource: 1
+        quantity: 100
+      - resource: 4
+        quantity: 1
+      - resource: 3
+        quantity: 1
+      - resource: 53
+        quantity: 1
+      - resource: 55
+        quantity: 1
+      - resource: 106
+        quantity: 1
+    isSpecial: 1
+    sprite: {fileID: 21300000, guid: ddff369ce8f687f4ab340ed4f780047b, type: 3}
+  liveOpsPackData:
+    levelCondition:
+      compareType: 0
+      value: -1
+      values: 
+    levelCondition2:
+      compareType: 0
+      value: -1
+      values: 
+    dayCondition:
+      compareType: 5
+      value: 1
+      values: 
+    sessionCondition:
+      compareType: 0
+      value: -1
+      values: 
+    homeCondition:
+      compareType: 0
+      value: -1
+      values: 
+    dayOfWeekCondition:
+      compareType: 0
+      value: -1
+      values: 
+    dateTimeCondition:
+      startTime: 
+      endTime: 

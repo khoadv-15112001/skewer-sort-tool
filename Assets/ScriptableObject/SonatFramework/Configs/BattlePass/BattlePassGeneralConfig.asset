@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860960140b3104742a8fc3f365b412c8, type: 3}
+  m_Name: BattlePassGeneralConfig
+  m_EditorClassIdentifier: 
+  active: 1
+  liveOpsPackData:
+    levelCondition:
+      compareType: 5
+      value: 30
+      values: 
+    levelCondition2:
+      compareType: 0
+      value: -1
+      values: 
+    dayCondition:
+      compareType: 5
+      value: 4
+      values: 
+    sessionCondition:
+      compareType: 0
+      value: -1
+      values: 
+    homeCondition:
+      compareType: 0
+      value: -1
+      values: 
+    dayOfWeekCondition:
+      compareType: 0
+      value: -1
+      values: 
+    dateTimeCondition:
+      startTime: 
+      endTime: 
+  milestoneDatas:
+  - stt: 1
+    exp: 1
+  - stt: 2
+    exp: 2
+  - stt: 3
+    exp: 3
+  - stt: 4
+    exp: 3
+  - stt: 5
+    exp: 3
+  - stt: 6
+    exp: 5
+  - stt: 7
+    exp: 5
+  - stt: 8
+    exp: 5
+  - stt: 9
+    exp: 5
+  - stt: 10
+    exp: 6
+  - stt: 11
+    exp: 6
+  - stt: 12
+    exp: 6
+  - stt: 13
+    exp: 6
+  - stt: 14
+    exp: 8
+  - stt: 15
+    exp: 8
+  - stt: 16
+    exp: 8
+  - stt: 17
+    exp: 8
+  - stt: 18
+    exp: 9
+  - stt: 19
+    exp: 9
+  - stt: 20
+    exp: 9
+  - stt: 21
+    exp: 9
+  - stt: 22
+    exp: 10
+  - stt: 23
+    exp: 10
+  - stt: 24
+    exp: 10
+  - stt: 25
+    exp: 10
+  - stt: 26
+    exp: 10
+  - stt: 27
+    exp: 15
+  - stt: 28
+    exp: 15
+  - stt: 29
+    exp: 15
+  - stt: 30
+    exp: 20
+  winReward:
+    resourceDatas:
+    - resource: 25
+      quantity: 1
+  KeySprite: {fileID: 21300000, guid: 6a7bae958ad9f2f42af8774090a9d21f, type: 3}
+  themeDatas:
+  - theme: 0
+    icon: {fileID: 21300000, guid: 6a7bae958ad9f2f42af8774090a9d21f, type: 3}
+    activateRewards:
+      resourceDatas:
+      - resource: 152
+        quantity: 1
+      - resource: 154
+        quantity: 1
+    namePopupTut: PopupTutBattlePass
+    namePopupBoard: PopupBattlePass
+    namePopupActivate: PopupActivateBattlePass
+  - theme: 1
+    icon: {fileID: 21300000, guid: b4647511530fdc54f868a966090d8513, type: 3}
+    activateRewards:
+      resourceDatas:
+      - resource: 155
+        quantity: 1
+      - resource: 156
+        quantity: 1
+    namePopupTut: PopupTutBattlePass_Thanksgiving
+    namePopupBoard: PopupBattlePass_Thanksgiving
+    namePopupActivate: PopupActivateBattlePass_Thanksgiving
+  - theme: 2
+    icon: {fileID: 21300000, guid: 7f004a5fdec36a742ae30649487749ef, type: 3}
+    activateRewards:
+      resourceDatas:
+      - resource: 158
+        quantity: 1
+      - resource: 159
+        quantity: 1
+    namePopupTut: PopupTutBattlePass_Xmas
+    namePopupBoard: PopupBattlePass_Xmas
+    namePopupActivate: PopupActivateBattlePass_Xmas

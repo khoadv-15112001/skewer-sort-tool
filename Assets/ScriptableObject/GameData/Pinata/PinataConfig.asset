@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6d947e5241c9b49970ce4365c33218, type: 3}
+  m_Name: PinataConfig
+  m_EditorClassIdentifier: 
+  LevelUnlock: 55
+  dayStart: 5
+  dayEnd: 1
+  Stages:
+  - MaxMilestone: 3
+    NumChance: 3
+    BonusCardRate: 0.2
+    UpgradeStarRates:
+    - Rate: 0.2
+      IsUpgrade: 1
+    - Rate: 0
+      IsUpgrade: 1
+  - MaxMilestone: 5
+    NumChance: 4
+    BonusCardRate: 0.15
+    UpgradeStarRates:
+    - Rate: 0.25
+      IsUpgrade: 1
+    - Rate: 0.05
+      IsUpgrade: 1
+  - MaxMilestone: 7
+    NumChance: 5
+    BonusCardRate: 0
+    UpgradeStarRates:
+    - Rate: 0.3
+      IsUpgrade: 0
+    - Rate: 0.05
+      IsUpgrade: 1

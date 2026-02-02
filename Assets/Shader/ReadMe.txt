@@ -1,0 +1,1 @@
+Shader dung cho texture di chuyển theo offset

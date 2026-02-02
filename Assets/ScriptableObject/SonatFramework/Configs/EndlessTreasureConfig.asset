@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd293b9a7b7a2044ae72e85d7338043, type: 3}
+  m_Name: EndlessTreasureConfig
+  m_EditorClassIdentifier: 
+  appearLevel: 11
+  startLoop: 3
+  expireInDays: 7
+  cooldown: 7200
+  listPacks:
+  - packIdx: 0
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 1
+        quantity: 50
+  - packIdx: 1
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 3
+        quantity: 1
+  - packIdx: 2
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 2
+        quantity: 1800
+  - packIdx: 3
+    shopItemKey: 21
+    rewardData:
+      resourceDatas:
+      - resource: 1
+        quantity: 500
+      - resource: 5
+        quantity: 1
+  - packIdx: 4
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 54
+        quantity: 1
+      - resource: 55
+        quantity: 1
+  - packIdx: 5
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 6
+        quantity: 1
+      - resource: 4
+        quantity: 1
+  - packIdx: 6
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 1
+        quantity: 200
+  - packIdx: 7
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 53
+        quantity: 1
+      - resource: 3
+        quantity: 1
+  - packIdx: 8
+    shopItemKey: 22
+    rewardData:
+      resourceDatas:
+      - resource: 1
+        quantity: 1000
+      - resource: 4
+        quantity: 2
+  - packIdx: 9
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 54
+        quantity: 2
+      - resource: 5
+        quantity: 2
+  - packIdx: 10
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 53
+        quantity: 2
+      - resource: 3
+        quantity: 2
+  - packIdx: 11
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 6
+        quantity: 2
+  - packIdx: 12
+    shopItemKey: 23
+    rewardData:
+      resourceDatas:
+      - resource: 1
+        quantity: 2000
+      - resource: 5
+        quantity: 3
+  - packIdx: 13
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 4
+        quantity: 3
+      - resource: 3
+        quantity: 3
+  - packIdx: 14
+    shopItemKey: -1
+    rewardData:
+      resourceDatas:
+      - resource: 2
+        quantity: 1800
+  liveOpsPackData:
+    levelCondition:
+      compareType: 0
+      value: -1
+      values: 
+    levelCondition2:
+      compareType: 0
+      value: -1
+      values: 
+    dayCondition:
+      compareType: 5
+      value: 5
+      values: 
+    sessionCondition:
+      compareType: 0
+      value: -1
+      values: 
+    homeCondition:
+      compareType: 0
+      value: -1
+      values: 
+    dayOfWeekCondition:
+      compareType: 0
+      value: -1
+      values: 
+    dateTimeCondition:
+      startTime: 
+      endTime: 

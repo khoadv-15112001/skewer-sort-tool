@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe852105e0e996498303ca58f923783, type: 3}
+  m_Name: SpeedUpConfigTest
+  m_EditorClassIdentifier: 
+  defaultCoinPrice: 100
+  remoteConfigKey: speed_up_price_by_segment
+  enableRewardAds: 1
+  adsItemType: booster
+  adsItemId: speed_up
+  coinEarnType: booster
+  coinEarnId: speed_up
+  speedMultiplier: 5
+  duration: 0
+  minSecondsToShow: 1
+  maxSecondsToShow: 600
+  segmentPrices:
+  - segment: IAP
+    price: 80
+  - segment: IAA
+    price: 100
+  - segment: Hybrid
+    price: 90
+  - segment: Organic
+    price: 100
+  - segment: Hybrid-High
+    price: 100

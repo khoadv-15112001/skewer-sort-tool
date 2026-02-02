@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2de1da860325cd4c9cee04a79f5554c, type: 3}
+  m_Name: Story_2
+  m_EditorClassIdentifier: 
+  data:
+    Id: 2
+    IsComingSoon: 0
+    Name: Hard Times
+    LevelReached: 35
+    FileNameVideo: 2.mp4
+    RewardData:
+      resourceDatas:
+      - resource: 2
+        quantity: 1800
+      - resource: 54
+        quantity: 1
+      - resource: 53
+        quantity: 1
+      - resource: 55
+        quantity: 1
+      - resource: 1
+        quantity: 150
+      - resource: 102
+        quantity: 1
+    ImageConfig:
+      BackgroundHomeSprite: {fileID: 21300000, guid: 25c659782d7460c4a9a4a0e918be372a, type: 3}
+      BackgroundIngameSprite: {fileID: 21300000, guid: 658d8af44c0282646a3941fd3e3f7255, type: 3}
+      ThumbnailConfig:
+        ThumbnailGraySprite: {fileID: 21300000, guid: fec75f4bd48aad9459bff59cf0db4c9d, type: 3}
+        Position: {x: 22, y: -14}
+        Scale: 0.88
+      OffsetYBackgroundIngame: -85

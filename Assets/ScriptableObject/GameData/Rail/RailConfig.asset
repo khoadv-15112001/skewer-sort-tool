@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c8ebda963291b49abd45342a94d1b6, type: 3}
+  m_Name: RailConfig
+  m_EditorClassIdentifier: 
+  LevelUnlock: 45
+  Stages:
+  - Name: Street
+    Background:
+      Global: {fileID: 21300000, guid: 450fced7ce6eac941a86a32b845bc045, type: 3}
+      Japan: {fileID: 21300000, guid: 2d6bbc52ddd371f4c8cf739882caa974, type: 3}
+    Milestones:
+    - ItemRequire: 30
+      Rewards:
+        resourceDatas:
+        - resource: 3
+          quantity: 1
+        - resource: 54
+          quantity: 1
+    - ItemRequire: 30
+      Rewards:
+        resourceDatas:
+        - resource: 4
+          quantity: 1
+        - resource: 102
+          quantity: 1
+    - ItemRequire: 50
+      Rewards:
+        resourceDatas:
+        - resource: 4
+          quantity: 1
+        - resource: 53
+          quantity: 1
+    - ItemRequire: 70
+      Rewards:
+        resourceDatas:
+        - resource: 2
+          quantity: 900
+        - resource: 54
+          quantity: 1
+        - resource: 53
+          quantity: 1
+        - resource: 55
+          quantity: 1
+        - resource: 103
+          quantity: 1
+        - resource: 1
+          quantity: 250
+  - Name: Beach
+    Background:
+      Global: {fileID: 21300000, guid: ccd82476aac60ae47af20e1ffcc8a8aa, type: 3}
+      Japan: {fileID: 21300000, guid: 6f94e68f49cab9d43ae62e4cba7a4072, type: 3}
+    Milestones:
+    - ItemRequire: 30
+      Rewards:
+        resourceDatas:
+        - resource: 6
+          quantity: 1
+        - resource: 102
+          quantity: 1
+    - ItemRequire: 30
+      Rewards:
+        resourceDatas:
+        - resource: 3
+          quantity: 1
+        - resource: 55
+          quantity: 1
+    - ItemRequire: 30
+      Rewards:
+        resourceDatas:
+        - resource: 4
+          quantity: 1
+        - resource: 103
+          quantity: 1
+    - ItemRequire: 50
+      Rewards:
+        resourceDatas:
+        - resource: 8
+          quantity: 1
+        - resource: 54
+          quantity: 1
+    - ItemRequire: 50
+      Rewards:
+        resourceDatas:
+        - resource: 5
+          quantity: 1
+        - resource: 53
+          quantity: 1
+    - ItemRequire: 70
+      Rewards:
+        resourceDatas:
+        - resource: 2
+          quantity: 1800
+        - resource: 6
+          quantity: 1
+        - resource: 54
+          quantity: 1
+        - resource: 53
+          quantity: 1
+        - resource: 104
+          quantity: 1
+        - resource: 1
+          quantity: 500
+  - Name: Kingdom
+    Background:
+      Global: {fileID: 21300000, guid: ab66894073ba2544fa78d72b2bf1d68e, type: 3}
+      Japan: {fileID: 21300000, guid: b8434a84bce134945b7dbae868670af8, type: 3}
+    Milestones:
+    - ItemRequire: 40
+      Rewards:
+        resourceDatas:
+        - resource: 5
+          quantity: 2
+        - resource: 53
+          quantity: 3
+    - ItemRequire: 40
+      Rewards:
+        resourceDatas:
+        - resource: 102
+          quantity: 1
+    - ItemRequire: 40
+      Rewards:
+        resourceDatas:
+        - resource: 4
+          quantity: 1
+        - resource: 55
+          quantity: 2
+    - ItemRequire: 50
+      Rewards:
+        resourceDatas:
+        - resource: 103
+          quantity: 1
+    - ItemRequire: 50
+      Rewards:
+        resourceDatas:
+        - resource: 3
+          quantity: 1
+        - resource: 54
+          quantity: 2
+    - ItemRequire: 70
+      Rewards:
+        resourceDatas:
+        - resource: 104
+          quantity: 1
+    - ItemRequire: 70
+      Rewards:
+        resourceDatas:
+        - resource: 6
+          quantity: 1
+        - resource: 53
+          quantity: 1
+    - ItemRequire: 90
+      Rewards:
+        resourceDatas:
+        - resource: 2
+          quantity: 3600
+        - resource: 5
+          quantity: 1
+        - resource: 54
+          quantity: 1
+        - resource: 53
+          quantity: 1
+        - resource: 55
+          quantity: 1
+        - resource: 106
+          quantity: 1
+        - resource: 1
+          quantity: 1000

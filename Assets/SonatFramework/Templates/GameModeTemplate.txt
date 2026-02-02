@@ -1,0 +1,39 @@
+#if CUSTOM_ENUM
+namespace Sonat.Enums
+{
+    public enum GameMode : byte
+    {
+        Classic
+    }
+
+    public enum GameState : byte
+    {
+        Loading = 0,
+        Playing,
+        Paused,
+        GameOver,
+        Tool
+    }
+
+    public enum GamePlacement : byte
+    {
+        Loading,
+        Gameplay,
+        Home
+    }
+    
+    public enum NavigationType : byte
+    {
+        None = 0,
+        Home,
+        Shop,
+        Leaderboard,	
+    }
+    
+    public enum StuckType: byte
+    {
+        OutOfTime = 0,
+        OutOfMove = 1
+    }
+}
+#endif

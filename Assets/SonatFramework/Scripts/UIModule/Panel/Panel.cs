@@ -1,0 +1,77 @@
+using System;
+using Cysharp.Threading.Tasks;
+using UnityEngine;
+
+namespace SonatFramework.Scripts.UIModule
+{
+    [RequireComponent(typeof(CanvasGroup))]
+    public abstract class Panel : View
+    {
+        public TweenData[] openTween;
+        public TweenData[] closeTween;
+        protected CanvasGroup panelCanvasGroup;
+
+
+        protected virtual void Reset()
+        {
+            panelCanvasGroup = GetComponent<CanvasGroup>();
+        }
+
+        public override void OnSetup()
+        {
+            if (panelCanvasGroup == null) panelCanvasGroup = GetComponent<CanvasGroup>();
+        }
+
+        public override void Open(UIData uiData)
+        {
+            this.uiData = uiData;
+            gameObject.SetActive(true);
+            PlayTweens(openTween, OnOpenCompleted).Forget();
+        }
+
+        public override void OnOpenCompleted()
+        {
+        }
+
+        //TODO: override this method must call OnCloseCompleted() at the end
+        public override void Close()
+        {
+            PlayTweens(closeTween, OnCloseCompleted).Forget();
+        }
+
+        protected override void OnCloseCompleted()
+        {
+            base.OnCloseCompleted();
+            if (uiData != null && uiData.TryGet<Action>(UIDataKey.CallBackOnClose, out var callback))
+                callback?.Invoke();
+        }
+
+        public override void OnFocus()
+        {
+        }
+
+        public override void OnFocusLost()
+        {
+        }
+
+        private async UniTask PlayTweens(TweenData[] tweenDatas, Action callback)
+        {
+            if (tweenDatas == null)
+            {
+                callback?.Invoke();
+                return;
+            }
+
+            float maxTime = 0;
+            for (var i = 0; i < tweenDatas.Length; i++)
+            {
+                UITween.Play(tweenDatas[i]).Forget();
+                if (tweenDatas[i].config.delay + tweenDatas[i].config.duration > maxTime)
+                    maxTime = tweenDatas[i].config.delay + tweenDatas[i].config.duration;
+            }
+
+            await UniTask.Delay(TimeSpan.FromSeconds(maxTime));
+            callback?.Invoke();
+        }
+    }
+}
