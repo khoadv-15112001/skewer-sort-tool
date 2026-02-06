@@ -10,7 +10,7 @@ namespace Tool
     public class UIToolItem : MonoBehaviour
     {
         [SerializeField] private FixedImageRatio icon;
-        [SerializeField] private TMP_Text text;
+        [SerializeField] private TMP_Text text, txtLink;
         private ItemData itemData;
         private UIToolLayer uiToolLayer;
         private int index;
@@ -158,7 +158,20 @@ namespace Tool
                 uiToolLayer.OnItemDataUpdated(index, itemData);
                 return;
             }
-
+            if (Input.GetKey(KeyCode.L) && itemData is not { isLink: true })
+            {
+                var previousType = itemData.itemType;
+                ToolManager.Instance.undoController.AddItemOperation(itemData, ItemOperationType.ChangeType, previousType);
+                itemData = new ItemData()
+                {
+                    id = itemData.id,
+                    itemType = itemData.itemType,
+                    isLink = true
+                };
+                SetVisual();
+                uiToolLayer.OnItemDataUpdated(index, itemData);
+                return;
+            }
             if (Input.GetKey(KeyCode.B) && itemData is not { itemType: ItemType.Bomb })
             {
                 var previousType = itemData.itemType;
@@ -240,6 +253,7 @@ namespace Tool
         public void SetVisual()
         {
             text.text = itemData.id.ToString();
+            txtLink.text = itemData.isLink ? $"link" : "";
             switch (itemData.itemType)
             {
                 case ItemType.Normal:

@@ -11,7 +11,7 @@ namespace Tool
     public class ToolItem : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer spriteRenderer;
-        [SerializeField] private TMP_Text text;
+        [SerializeField] private TMP_Text text, txtLink;
         [SerializeField] private GameObject hiddenObject;
         [SerializeField] private GameObject keyObject;
         [SerializeField] private GameObject iceObject;
@@ -40,6 +40,7 @@ namespace Tool
         public void SetVisual()
         {
             text.text = itemData.id.ToString();
+            txtLink.text = itemData.isLink ? $"link" : "";
             _ = spriteRenderer.SetSpriteAsync(PathManager.ItemSprite(itemData.id));
             switch (itemData.itemType)
             {

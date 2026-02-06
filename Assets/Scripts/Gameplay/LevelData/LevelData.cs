@@ -190,7 +190,7 @@ namespace Gameplay.LevelData
     public class ItemData
     {
         public int id;
-        public bool hidden;
+        public bool hidden, isLink;
         public ItemType itemType;
 
         public virtual ItemData Clone()
